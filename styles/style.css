@@ -1,0 +1,258 @@
+/* Default Styling */
+
+* {
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+body {
+	margin: 0 auto;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+ul {
+	padding: 0;
+}
+img{
+	max-width: 100%;
+}
+
+.container {
+	margin: 0 1%;
+}
+/* Nav Bar Styling */
+
+.headerBar {
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    overflow: hidden;
+    width:90%;
+    text-align: center;
+}
+
+header{
+	position: relative;
+}
+
+header nav {
+	max-height: 0px;
+	transition: all .4s;
+	overflow: hidden;
+}
+
+.hamburguesa,
+input.hamburguesa-menu-toggler{
+	position: absolute;
+	top: 0; right: 0;
+	width: 40px;
+	height: 40px;
+}
+
+.hamburguesa{
+	z-index: 1;
+	background: red;
+	padding: 7px;
+	margin-right: 9px;
+
+}
+
+.hamburguesa > hr {
+	width: 90%;
+	margin: 5px 0;
+}
+
+input.hamburguesa-menu-toggler{
+	z-index: 2;
+	opacity: 0;
+}
+
+input.hamburguesa-menu-toggler:checked + nav {
+	max-height: 1000px;
+}
+
+header li {
+    padding: 10px 2%;
+    text-decoration: none;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+   	font-weight: bolder;
+
+}
+
+a:hover:not(.active) {
+    background-color: #fff;
+}
+
+a:hover {
+background-color: rgba(225,225,225, .5);
+}
+
+ul img {
+	width: 120px;
+}
+
+
+/* Headline Image Styles */
+
+.headlineImgContainer {
+	box-shadow: 5px 0 0 0 inset;
+	box-shadow: inset 0px 34px 28px -20px rgba(0,0,0,0.37);
+
+}
+
+.headlineImg {
+	width: 100%;
+	padding: 30px 2% 0 2%;
+	margin-top: 10px;
+}
+
+.partnersContainer{
+	text-align: center;
+	border-bottom: 7px solid dodgerblue;
+}
+.partners {
+	display: inline-block;
+	text-align: center;
+	padding: 0 10px;
+	font-size: 1.5em;
+	position: relative;
+	background-color: #fff;
+	top: 50px;
+
+}
+
+/* Icon Styles */
+
+.iconContainer{
+	font-size: 0;
+	text-align: center;
+}
+
+.iconContainer > * {
+	font-size: medium;
+	width: 50%;
+	display: inline-block;
+	padding: 20px;
+
+}
+
+
+
+/* Footer Styles */
+
+.footerImgContainer {}
+
+.footerImgContainer {
+	height: 200px;
+	padding: 30px 2%;
+	color: #ffffff;
+	text-align: center;
+	background: linear-gradient(rgba(20,20,20, .5), rgba(20,20,20, .5)), url('http://www.cadillaccanada.ca/content/dam/Cadillac/northamerica/ca/nscwebsite/en/home/vehicles/coupes/2016_ats_coupe/Model_overview/Performance/01_images/2016-ats-coupe-performance-masthead-960x320.jpg');
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.footerImgText {
+	margin-top: 40px;
+}
+
+.textBox {
+	border: 2px solid white;
+	display: inline-block;
+	padding: 2px;
+	font-size: .8em;
+}
+
+
+footer {
+	padding: 10px;
+}
+
+footer li {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    padding: 10px 1.2%;
+
+}
+
+footer ul :not(:last-child) {
+	border-right: 2px solid red;
+}
+
+footer li a {
+	font-size: .5em;
+}
+
+/* media queries  */
+/* 1040px Min for fullsize view */
+@media screen and (min-width: 620px){
+	header .hamburguesa{
+		display: none;
+	}
+
+	header nav {
+		max-height: 1000px
+	}
+
+	header li {
+	    display: inline-block;
+	    padding: 10px 2%;
+	    vertical-align: middle;
+	    text-decoration: none;
+	}
+
+	.iconContainer > * {
+		width: 20%;
+		margin: 15px auto;
+		padding: 2%;
+	}
+
+
+	.footerImgContainer {
+		width: 100%;
+		height: 400px;
+		padding: 30px 2%;
+		background: linear-gradient(rgba(20,20,20, .5), rgba(20,20,20, .5)), url('http://www.cadillaccanada.ca/content/dam/Cadillac/northamerica/ca/nscwebsite/en/home/vehicles/coupes/2016_ats_coupe/Model_overview/Performance/01_images/2016-ats-coupe-performance-masthead-960x320.jpg');
+		background-repeat:no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+
+	.footerImgText {
+		margin-top: 100px;
+		font-size: 2em;
+	}
+
+	.textBox {
+		border: 2px solid white;
+		display: inline-block;
+		padding: 10px;
+		font-size: 1em;
+	}
+
+	footer {
+		padding: 40px;
+		/* border: 3px solid magenta; */
+	}
+
+	footer li a {
+	font-size: 1em;
+	font-weight: normal;
+	}
+	
+}
