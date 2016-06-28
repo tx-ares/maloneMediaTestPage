@@ -200,7 +200,7 @@ footer li a {
 
 /* media queries  */
 /* 1040px Min for fullsize view */
-@media screen and (min-width: 620px){
+@media screen and (min-width: 420px){
 	header .hamburguesa{
 		display: none;
 	}
